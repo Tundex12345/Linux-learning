@@ -1,0 +1,20 @@
+{
+  "name": "Linux Fundamentals Lab",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:2": {
+      "installZsh": true,
+      "configureZshAsDefault": true
+    }
+  },
+  "onCreateCommand": "sudo apt-get update && sudo apt-get install -y tree net-tools curl wget vim nano htop man-db iputils-ping",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.live-share",
+        "timonwong.shellcheck"
+      ]
+    }
+  },
+  "remoteUser": "vscode"
+}
